@@ -19,7 +19,7 @@ export default function Command() {
       }
     >
       {Array.from({ length: 20 }, (_, i) => 5 * (i + 1)).map((num) => (
-        <List.Item key={num} title={String(num)} subtitle={"a".repeat(num)} />
+        <List.Item key={num} title={String(num).repeat(10)} subtitle={"a".repeat(num)} />
       ))}
     </List>
   );
